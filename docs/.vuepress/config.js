@@ -1,7 +1,6 @@
 module.exports = {
   title: "诚毅物联网",
   description: "诚毅物联网-前端组件库",
-  dest: "./docs/.vuepress/dist",
   evergreen: true,
   themeConfig: {
     logo: "/images/logo.png",

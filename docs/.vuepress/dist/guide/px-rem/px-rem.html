@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue中使用 lib-flexible 和 px2rem-loader | 诚毅物联网</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="诚毅物联网-前端组件库">
+    <link rel="preload" href="/assets/css/0.styles.fd01bce7.css" as="style"><link rel="preload" href="/assets/js/app.ada2cfd3.js" as="script"><link rel="prefetch" href="/assets/js/10.bc0df471.js"><link rel="prefetch" href="/assets/js/11.cedac087.js"><link rel="prefetch" href="/assets/js/12.8e275705.js"><link rel="prefetch" href="/assets/js/13.96ec833a.js"><link rel="prefetch" href="/assets/js/14.45ebc09a.js"><link rel="prefetch" href="/assets/js/15.70162d47.js"><link rel="prefetch" href="/assets/js/16.77b9b1c8.js"><link rel="prefetch" href="/assets/js/17.c45e8228.js"><link rel="prefetch" href="/assets/js/18.0e73c0ef.js"><link rel="prefetch" href="/assets/js/19.2453965d.js"><link rel="prefetch" href="/assets/js/2.c558656b.js"><link rel="prefetch" href="/assets/js/20.52a00de4.js"><link rel="prefetch" href="/assets/js/21.0535d38f.js"><link rel="prefetch" href="/assets/js/22.1079d9d0.js"><link rel="prefetch" href="/assets/js/23.9743387b.js"><link rel="prefetch" href="/assets/js/24.42ba5db6.js"><link rel="prefetch" href="/assets/js/25.32342426.js"><link rel="prefetch" href="/assets/js/26.8599156d.js"><link rel="prefetch" href="/assets/js/27.89fd8fa7.js"><link rel="prefetch" href="/assets/js/28.65a9c991.js"><link rel="prefetch" href="/assets/js/29.32658b3e.js"><link rel="prefetch" href="/assets/js/3.e06b0595.js"><link rel="prefetch" href="/assets/js/30.9a6e0c4d.js"><link rel="prefetch" href="/assets/js/31.52cf592a.js"><link rel="prefetch" href="/assets/js/32.653098db.js"><link rel="prefetch" href="/assets/js/33.54792da2.js"><link rel="prefetch" href="/assets/js/34.e42b652d.js"><link rel="prefetch" href="/assets/js/35.05f74f67.js"><link rel="prefetch" href="/assets/js/36.1b0aae8b.js"><link rel="prefetch" href="/assets/js/37.32151889.js"><link rel="prefetch" href="/assets/js/38.ddecab63.js"><link rel="prefetch" href="/assets/js/39.386dfc53.js"><link rel="prefetch" href="/assets/js/4.45647a51.js"><link rel="prefetch" href="/assets/js/40.6ae279e5.js"><link rel="prefetch" href="/assets/js/41.3f19e87e.js"><link rel="prefetch" href="/assets/js/42.5fc7a70f.js"><link rel="prefetch" href="/assets/js/43.2604c72a.js"><link rel="prefetch" href="/assets/js/44.1c6595b2.js"><link rel="prefetch" href="/assets/js/45.dbc7d069.js"><link rel="prefetch" href="/assets/js/46.60c791ef.js"><link rel="prefetch" href="/assets/js/47.f203c43e.js"><link rel="prefetch" href="/assets/js/48.1877a1cd.js"><link rel="prefetch" href="/assets/js/49.a766633b.js"><link rel="prefetch" href="/assets/js/5.e0a6ffd6.js"><link rel="prefetch" href="/assets/js/50.706fe3ae.js"><link rel="prefetch" href="/assets/js/51.28e345cc.js"><link rel="prefetch" href="/assets/js/52.ad6d2fab.js"><link rel="prefetch" href="/assets/js/53.e382a0aa.js"><link rel="prefetch" href="/assets/js/54.80c358fa.js"><link rel="prefetch" href="/assets/js/55.5b7c1de8.js"><link rel="prefetch" href="/assets/js/56.a9c02147.js"><link rel="prefetch" href="/assets/js/57.cdd0c895.js"><link rel="prefetch" href="/assets/js/58.492b6776.js"><link rel="prefetch" href="/assets/js/59.70711347.js"><link rel="prefetch" href="/assets/js/6.66cacba1.js"><link rel="prefetch" href="/assets/js/60.d40630ad.js"><link rel="prefetch" href="/assets/js/61.1393df14.js"><link rel="prefetch" href="/assets/js/62.c019424c.js"><link rel="prefetch" href="/assets/js/7.3150e745.js"><link rel="prefetch" href="/assets/js/8.d6ba092e.js"><link rel="prefetch" href="/assets/js/9.ed3de732.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fd01bce7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/logo.png" alt="诚毅物联网" class="logo"> <span class="site-name can-hide">诚毅物联网</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  vue页面及组件
+</a></div><div class="nav-item"><a href="/uniapp/" class="nav-link">
+  UNIAPP页面及组件
+</a></div><div class="nav-item"><a href="/fun/" class="nav-link">
+  常用js方法总结
+</a></div><div class="nav-item"><a href="/Css/" class="nav-link">
+  常用Css样式总结
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  vue页面及组件
+</a></div><div class="nav-item"><a href="/uniapp/" class="nav-link">
+  UNIAPP页面及组件
+</a></div><div class="nav-item"><a href="/fun/" class="nav-link">
+  常用js方法总结
+</a></div><div class="nav-item"><a href="/Css/" class="nav-link">
+  常用Css样式总结
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/guide/" aria-current="page" class="sidebar-link">快速上手</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>组件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/upload/upload.html" class="sidebar-link">Upload</a></li><li><a href="/guide/map/map.html" class="sidebar-link">vue 三方地图</a></li><li><a href="/guide/QRCode/QRCode.html" class="sidebar-link">vue 二维码显示 下载</a></li><li><a href="/guide/MapDrilling/MapDrilling.html" class="sidebar-link">Echarts地图钻取</a></li><li><a href="/guide/progressBar/progressBar.html" class="sidebar-link">刻度尺进度条组件</a></li><li><a href="/guide/EchartsMap/EchartsMap.html" class="sidebar-link">Echarts地图封装</a></li><li><a href="/guide/px-rem/px-rem.html" aria-current="page" class="active sidebar-link">vue中px转rem</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue中使用-lib-flexible-和-px2rem-loader"><a href="#vue中使用-lib-flexible-和-px2rem-loader" class="header-anchor">#</a> vue中使用 lib-flexible 和 px2rem-loader</h1> <blockquote><p>一、安装<br>
+npm install lib-flexible --save<br>
+npm install px2rem-loader --save<br>
+二、配置 build/utils<br>
+详情看代码<br>
+三、在 src/utils 下创建flexible.js文件<br>
+详情看代码<br>
+四、在 src/main.js 中引入<br>
+import '@/utils/flexible'</p></blockquote> <div class="demo" data-v-663b5aba><div class="component-wrapper" data-v-663b5aba><div class="component-wrapper-demo" data-v-663b5aba>
+  代码
+  </div> <div class="code-content" style="height: 0;" data-v-663b5aba><div class="code-content-height" data-v-663b5aba><pre data-v-663b5aba><code class="hljs vue">utils配置
+
+const cssLoader = {
+  loader: 'css-loader',
+  options: {
+    sourceMap: options.sourceMap
+  }
+}
+
+const px2remLoader = {
+  loader: 'px2rem-loader',
+  options: {
+      remUnit: 192
+  }
+}
+        
+const postcssLoader = {
+  loader: 'postcss-loader',
+  options: {
+    sourceMap: options.sourceMap
+  }
+}
+
+function generateLoaders (loader, loaderOptions) {
+  const loaders = options.usePostCSS ? [cssLoader, postcssLoader, px2remLoader] : [cssLoader, px2remLoader]
+
+  if (loader) {
+    loaders.push({
+      loader: loader + '-loader',
+      options: Object.assign({}, loaderOptions, {
+        sourceMap: options.sourceMap
+      })
+    })
+  }
+  ......
+
+
+
+
+
+flexible.js代码
+
+(function () {
+    // flexible.css
+  var cssText =
+        '' +
+        '@charset "utf-8";html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-overflow-scrolling:touch}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:transparent}body,html{font-family:"Microsoft YaHei",sans-serif,Tahoma,Arial}article,aside,blockquote,body,button,code,dd,details,div,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}input,input[type=button],input[type=reset],input[type=submit]{resize:none;border:none;-webkit-appearance:none;border-radius:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:after,q:before{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a:hover{text-decoration:underline}a,ins{text-decoration:none}a:active,a:hover,a:link,a:visited{background:0 0;-webkit-tap-highlight-color:transparent;-webkit-tap-highlight-color:transparent;outline:0;text-decoration:none}'
+    // cssText end
+
+  var styleEl = document.createElement('style')
+  document.getElementsByTagName('head')[0].appendChild(styleEl)
+  if (styleEl.styleSheet) {
+    if (!styleEl.styleSheet.disabled) {
+      styleEl.styleSheet.cssText = cssText
+    }
+  } else {
+    try {
+      styleEl.innerHTML = cssText
+    } catch (e) {
+      styleEl.innerText = cssText
+    }
+  }
+})()
+
+;
+(function (win, lib) {
+  var doc = win.document
+  var docEl = doc.documentElement
+  var metaEl = doc.querySelector('meta[name="viewport"]')
+  var flexibleEl = doc.querySelector('meta[name="flexible"]')
+  var dpr = 0
+  var scale = 0
+  var tid
+  var flexible = lib.flexible || (lib.flexible = {})
+
+  if (metaEl) {
+    console.warn('将根据已有的meta标签来设置缩放比例')
+    var match = metaEl.getAttribute('content').match(/initial-scale=([d.]+)/)
+    if (match) {
+      scale = parseFloat(match[1])
+      dpr = parseInt(1 / scale)
+    }
+  } else if (flexibleEl) {
+    var content = flexibleEl.getAttribute('content')
+    if (content) {
+      var initialDpr = content.match(/initial-dpr=([d.]+)/)
+      var maximumDpr = content.match(/maximum-dpr=([d.]+)/)
+      if (initialDpr) {
+        dpr = parseFloat(initialDpr[1])
+        scale = parseFloat((1 / dpr).toFixed(2))
+      }
+      if (maximumDpr) {
+        dpr = parseFloat(maximumDpr[1])
+        scale = parseFloat((1 / dpr).toFixed(2))
+      }
+    }
+  }
+
+  if (!dpr &amp;&amp; !scale) {
+    // var isAndroid = win.navigator.appVersion.match(/android/gi)
+    var isIPhone = win.navigator.appVersion.match(/iphone/gi)
+    var devicePixelRatio = win.devicePixelRatio
+    if (isIPhone) {
+            // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+      if (devicePixelRatio &gt;= 3 &amp;&amp; (!dpr || dpr &gt;= 3)) {
+        dpr = 3
+      } else if (devicePixelRatio &gt;= 2 &amp;&amp; (!dpr || dpr &gt;= 2)) {
+        dpr = 2
+      } else {
+        dpr = 1
+      }
+    } else {
+            // 其他设备下，仍旧使用1倍的方案
+      dpr = 1
+    }
+    scale = 1 / dpr
+  }
+
+  docEl.setAttribute('data-dpr', dpr)
+  if (!metaEl) {
+    metaEl = doc.createElement('meta')
+    metaEl.setAttribute('name', 'viewport')
+    metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no')
+    if (docEl.firstElementChild) {
+      docEl.firstElementChild.appendChild(metaEl)
+    } else {
+      var wrap = doc.createElement('div')
+      wrap.appendChild(metaEl)
+      doc.write(wrap.innerHTML)
+    }
+  }
+
+  function refreshRem () {
+    var width = docEl.getBoundingClientRect().width
+    if (width / dpr &gt; 540) {
+      width = width * dpr
+    }
+    var rem = width / 10
+    docEl.style.fontSize = rem + 'px'
+    flexible.rem = win.rem = rem
+  }
+
+  win.addEventListener('resize', function () {
+    clearTimeout(tid)
+    tid = setTimeout(refreshRem, 300)
+  }, false)
+  win.addEventListener('pageshow', function (e) {
+    if (e.persisted) {
+      clearTimeout(tid)
+      tid = setTimeout(refreshRem, 300)
+    }
+  }, false)
+
+  if (doc.readyState === 'complete') {
+    doc.body.style.fontSize = 12 * dpr + 'px'
+  } else {
+    doc.addEventListener('DOMContentLoaded', function (e) {
+      doc.body.style.fontSize = 12 * dpr + 'px'
+    }, false)
+  }
+
+  refreshRem()
+
+  flexible.dpr = win.dpr = dpr
+  flexible.refreshRem = refreshRem
+  flexible.rem2px = function (d) {
+    var val = parseFloat(d) * this.rem
+    if (typeof d === 'string' &amp;&amp; d.match(/rem$/)) {
+      val += 'px'
+    }
+    return val
+  }
+  flexible.px2rem = function (d) {
+    var val = parseFloat(d) / this.rem
+    if (typeof d === 'string' &amp;&amp; d.match(/px$/)) {
+      val += 'rem'
+    }
+    return val
+  }
+})(window, window['lib'] || (window['lib'] = {}))</code></pre></div></div> <div class="lock-code" data-v-663b5aba><i class="el-icon-caret-top icon-down" data-v-663b5aba></i> <span class="lock-code-word" data-v-663b5aba>隐藏代码</span></div></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">8/24/2020, 2:59:49 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/EchartsMap/EchartsMap.html" class="prev">
+        Echarts地图封装
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ada2cfd3.js" defer></script>
+  </body>
+</html>
