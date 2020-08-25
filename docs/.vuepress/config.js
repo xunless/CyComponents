@@ -1,6 +1,40 @@
 module.exports = {
   title: "诚毅物联网",
   description: "诚毅物联网-前端组件库",
+  head: [
+    [
+      "link",
+      {
+        rel: "icon",
+        href: `/favicon.ico`,
+      },
+    ],
+    [
+      "script",
+      {
+        src:
+          "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js",
+      },
+    ],
+    [
+      "script",
+      {
+        src:
+          "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        type: "text/css",
+        href:
+          "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css",
+      },
+    ],
+  ],
+  dest: "./docs/.vuepress/dist",
+  ga: "",
   evergreen: true,
   themeConfig: {
     logo: "/images/logo.png",
