@@ -12,15 +12,13 @@ module.exports = {
     [
       "script",
       {
-        src:
-          "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js",
+        src: "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js",
       },
     ],
     [
       "script",
       {
-        src:
-          "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js",
+        src: "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js",
       },
     ],
     [
@@ -28,8 +26,7 @@ module.exports = {
       {
         rel: "stylesheet",
         type: "text/css",
-        href:
-          "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css",
+        href: "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css",
       },
     ],
   ],
@@ -41,8 +38,7 @@ module.exports = {
     sidebar: "auto",
     sidebarDepth: 2,
     lastUpdated: "上次更新",
-    nav: [
-      {
+    nav: [{
         text: "vue页面及组件",
         link: "/guide/",
       },
@@ -78,8 +74,7 @@ module.exports = {
         {
           title: "公用js方法",
           collapsable: false,
-          children: [
-            {
+          children: [{
               path: "/fun/com/input",
               title: "正则验证",
             },
@@ -155,6 +150,10 @@ module.exports = {
               path: "/fun/payment/payment",
               title: "uniapp 支付",
             },
+            {
+              path: '/fun/Amap/amap',
+              title: 'vue后台高德地图'
+            }
           ],
         },
       ],
@@ -165,8 +164,7 @@ module.exports = {
           title: "组件",
           collapsable: false,
           sidebarDepth: 2,
-          children: [
-            {
+          children: [{
               path: "/guide/upload/upload",
               title: "Upload",
             },
@@ -203,8 +201,7 @@ module.exports = {
           title: "页面",
           collapsable: false,
           sidebarDepth: 2,
-          children: [
-            {
+          children: [{
               path: "/uniapp/page/page",
               title: "海报下载",
             },
@@ -218,8 +215,7 @@ module.exports = {
           collapsable: false,
           title: "组件",
           sidebarDepth: 2,
-          children: [
-            {
+          children: [{
               path: "/uniapp/DataStatus/DataStatus",
               title: "数据状态组件",
             },
@@ -282,32 +278,33 @@ module.exports = {
           ],
         },
       ],
-      "/Css/": [
-        {
-          title: "样式",
-          collapsable: false,
-          sidebarDepth: 2,
-          children: [
-            ["", "介绍"],
-            {
-              path: "/Css/flex/flex",
-              title: "巧妙使用flex布局实现手机自适应",
-            },
-            {
-              path: "/Css/row/row",
-              title: "css多行/单行显示...",
-            },
-            {
-              path: "/Css/HorizontalArrangement/HorizontalArrangement",
-              title: "多个元素水平自动排列，自动换行，每行元素两边对齐",
-            },
-            {
-              path: "/Css/IrregularFigure/IrregularFigure",
-              title: "css实现不规则图形",
-            },
-          ],
-        },
-      ],
+      "/Css/": [{
+        title: "样式",
+        collapsable: false,
+        sidebarDepth: 2,
+        children: [
+          ["", "介绍"],
+          {
+            path: "/Css/flex/flex",
+            title: "巧妙使用flex布局实现手机自适应",
+          },
+          {
+            path: "/Css/row/row",
+            title: "css多行/单行显示...",
+          },
+          {
+            path: "/Css/HorizontalArrangement/HorizontalArrangement",
+            title: "多个元素水平自动排列，自动换行，每行元素两边对齐",
+          },
+          {
+            path: "/Css/IrregularFigure/IrregularFigure",
+            title: "css实现不规则图形",
+          }, {
+            path: '/Css/DiscolorationOfwords/DiscolorationOfwords',
+            title: 'css文字渐变色'
+          }
+        ],
+      }, ],
     },
   },
 };
