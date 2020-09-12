@@ -275,6 +275,10 @@ module.exports = {
               path: "/uniapp/AudioPlayback/AudioPlayback",
               title: "安卓音频播放插件",
             },
+            {
+              path: "/uniapp/canvasDrawChart/canvasDrawChart",
+              title: "uniapp 使用canvas绘制简单图表",
+            },
           ],
         },
       ],
