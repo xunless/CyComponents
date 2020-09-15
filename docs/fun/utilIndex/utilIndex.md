@@ -1,11 +1,11 @@
-## 截取订单号或者交易号中的部分替换为 "***"
+# 截取订单号或者交易号中的部分替换为 "***"
 
 <template>
   <demo :codeStr="str">
     <div class="flex-center">
       <el-input placeholder="请输入一个加数" type="text" style="width:200px;margin-right:10px;" v-model="no" class="input-with-select"></el-input>
       <el-input placeholder="请输入被替换部分的长度（要小于原数据长度）" type="number" style="width:200px;margin-right:10px;" v-model="lengthNum" class="input-with-select"></el-input>
-    </div>
+    </div> 
     <span>结果：</span>
     <div class="flex-center">
       <el-button slot="append" style="margin-right:10px;" class="input-with-select" @click="getResult">结果</el-button>
