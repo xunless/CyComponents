@@ -157,6 +157,10 @@ module.exports = {
             {
               path: '/fun/utilIndex/utilIndex',
               title: '截取订单号或者交易号中的部分替换为 "***"'
+            },
+            {
+              path: '/fun/wxVersion/wxVersion',
+              title: '微信小程序 版本更新'
             }
           ],
         },

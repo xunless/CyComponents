@@ -4,8 +4,8 @@
  # @@Company: ZZCYI
  # @Author: liu
  # @Date: 2020-09-15 15:45:18
- # @LastEditors: liu
- # @LastEditTime: 2020-09-15 16:30:47
+ # @LastEditors: 王
+ # @LastEditTime: 2020-09-16 17:30:07
  # @Update Descripttion: 
 ### 
 # 确保脚本抛出遇到的错误
@@ -15,7 +15,7 @@ set -e
 npm run docs:build
 
 git add .
-git commit -m "截取订单号或者交易号中的部分替换为 '***'"
+git commit -m "微信小程序 版本更新"
 
 git push
 
