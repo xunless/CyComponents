@@ -200,6 +200,10 @@ module.exports = {
               path: "/guide/px-rem/px-rem",
               title: "vue中px转rem",
             },
+            {
+              path: "/guide/uploadJavaServe/uploadJavaServe",
+              title: "java后台项目上传宝塔服务器流程",
+            },
           ],
         },
       ],

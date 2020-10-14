@@ -5,7 +5,7 @@
  # @Author: liu
  # @Date: 2020-09-15 15:45:18
  # @LastEditors: 王
- # @LastEditTime: 2020-09-16 17:30:07
+ # @LastEditTime: 2020-10-14 14:20:44
  # @Update Descripttion: 
 ### 
 # 确保脚本抛出遇到的错误
@@ -15,7 +15,7 @@ set -e
 npm run docs:build
 
 git add .
-git commit -m "微信小程序 版本更新"
+git commit -m "java后台项目上传宝塔服务器流程"
 
 git push
 
