@@ -161,6 +161,10 @@ module.exports = {
             {
               path: '/fun/wxVersion/wxVersion',
               title: '微信小程序 版本更新'
+            },
+            {
+              path: '/fun/DownloadStreamFile/DownloadStreamFile',
+              title: '后台下载Excel流文件'
             }
           ],
         },
